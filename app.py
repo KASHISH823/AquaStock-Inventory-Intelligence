@@ -142,25 +142,14 @@ if df is None:
 
 if df is None:
     st.error(
-        "CSV not found. Put aquatic_demand_ml_dataset.csv and/or "
-        "inventory_business_output.csv inside the data folder."
+    "CSV not found. Please check that the required CSV files "
+    "are present in the project root directory."
     )
     st.stop()
 
 df = add_business_logic(df)
 model = read_model(MODEL_FILE)
 
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent
-
-DATA_DIR = BASE_DIR / "data"
-
-BUSINESS_FILE = DATA_DIR / "inventory_business_output.csv"
-
-DATA_FILE = DATA_DIR / "aquatic_demand_ml_dataset.csv"
-
-MODEL_FILE = BASE_DIR / "model.pkl"
 
 # ------------------------------------------------------------
 # Sidebar
