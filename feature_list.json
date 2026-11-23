@@ -1,0 +1,30 @@
+{
+  "num_features": [
+    "days_in_month",
+    "month_num",
+    "quarter",
+    "month_index",
+    "demand_lag_1",
+    "demand_lag_2",
+    "demand_lag_3",
+    "demand_roll_mean_3",
+    "demand_roll_std_3",
+    "demand_roll_mean_6",
+    "demand_expanding_mean",
+    "demand_growth_1",
+    "demand_per_day_lag_1",
+    "avg_price",
+    "avg_discount",
+    "avg_stock_lag_1",
+    "return_rate_lag_1",
+    "avg_rating_lag_1"
+  ],
+  "cat_features": [
+    "category",
+    "subcategory",
+    "brand",
+    "location",
+    "season"
+  ],
+  "best_model": "XGBoost (tuned)"
+}

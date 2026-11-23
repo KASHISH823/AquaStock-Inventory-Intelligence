@@ -1,0 +1,7 @@
+Model,MAE,RMSE,R2
+XGBoost (tuned),5.51,7.01,0.88
+Random Forest,5.54,7.05,0.879
+Linear Regression,5.58,7.09,0.877
+XGBoost,5.6,7.13,0.876
+Naive (3-month average),6.82,8.74,0.814
+Naive (last month),8.57,10.96,0.707
